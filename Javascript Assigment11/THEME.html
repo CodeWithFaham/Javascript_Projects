@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="theme">
+
+    <div class="container">
+        <div id="header"></div>
+        <div id="section">
+            <center>
+                <label>SELECT THEME</label>
+                   <select id="choice">
+                     <optgroup>
+                        <option value="l">Light Theme</option>
+                        <option value="d">Dark Theme</option>
+                        <option value="s">Sports Theme</option>
+                        <option value="g">Gaming Theme</option>
+                     </optgroup>
+                   </select>
+                   <button onclick="themechange()">Apply</button>
+            </center>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <style>
+        body{
+            margin:0px;
+            background-size: cover;
+            background-attachment:fixed;
+        }
+        .container{
+            width: 85%;
+            margin: 0px auto;
+            color: white;
+        }
+        #header{
+            height: 100px;
+            /* background-color: gray; */
+            color: black;
+        }
+        #footer{
+            height: 100px;
+            /* background-color: gray; */
+        }
+        #section{
+            height:1000px;
+            /* background-color: silver; */
+        }
+    </style>
+
+    <script>
+        function themechange()
+        {
+            var uc =document.getElementById("choice").value;
+
+            if(uc == "s")
+            { document.getElementById("theme").style.backgroundImage = "url(image/pexels-cesar-perez-733745.jpg)"; }
+
+             else if(uc == "g")
+            { document.getElementById("theme").style.backgroundImage = "url(image/download.jpeg)"; }
+
+            else if(uc == "l")
+            {document.getElementById("theme").style.backgroundColor="white";
+            document.getElementById("theme").style.backgroundImage = "";}
+
+            else 
+            {document.getElementById("theme").style.backgroundColor = "black";
+            document.getElementById("theme").style.backgroundImage = "";}
+        }
+    </script>
+
+
+</body>
+</html>

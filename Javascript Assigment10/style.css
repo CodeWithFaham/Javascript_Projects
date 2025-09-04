@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    background-color: black;
+    height: 100px;
+}
+.lb{
+    height: 800px;
+    background-color: black;
+    width: 20%;
+    float: left;
+}
+.section{
+    height: 800px;
+    background-color: white;
+    width: 60%;
+    float: left;
+}
+
+.rb{
+    height: 800px;
+    background-color: black;
+    width: 20%;
+    float: left;
+}
+.box{
+    height: 100px;
+    width: 160px;
+    margin: 30px;
+    padding: 20px;
+    float: left;
+}
+.box1{
+    background-color: chartreuse;
+
+}
+.box2{
+    background-color: chartreuse;
+}
+.box3{
+    background-color: darkseagreen;
+}
+.footer{
+    background-color: black;
+    height: 100px;
+    clear: both;
+}

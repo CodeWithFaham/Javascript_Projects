@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sign Up Example -->
+    <!-- 01 -->
+    <input type="text" id="textone" />
+    <input type="text" id="textTWO" />
+    <button  onclick="testVariable()">Sign up</button> <br />
+    <span id="spanResult">
+
+    </span>
+<br>
+<br>
+
+    <!-- Show More Example -->
+    <!-- 02 -->
+    <article id="content">
+        <p>
+          freeCodeCamp is one of the best platforms to learn how to code.
+          freeCodeCamp has a detailed curriculum that will take you from zero to
+          hero in web development, software engineering, mahine learning, and
+          more.
+        </p>
+  
+        <p>
+          freeCodeCamp also has a YouTube channel containing over 1000 videos on
+          web development, software engineering, machine learning, data science,
+          freelance web development, database administration, and pretty much
+          anything related to tech. To get updates when videos are uploaded, you
+          need to subscribe to the channel and turn on notifications. You can also
+          follow freeCodeCamp on Twitter, where links to well written articles and
+          videos are tweeted daily.
+        </p>
+  
+        <p>
+          Since no one has to pay to learn how to code on freeCodeCamp,
+          freeCodeCamp runs on voluntary donations from donors all around the
+          world in order to pay employees and maintain servers. If you are
+          generous enough consider joining the donors.
+        </p>
+      </article>
+  
+  <button onclick="showMore()">Show more</button> 
+<br /><br />
+<br>
+
+  <!-- Editable Table Example -->
+  <!-- 03 -->
+   
+  <div id="wrapper">
+    <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+    <tr>
+    <th>Name</th>
+    <th>Country</th>
+    <th>Age</th>
+    </tr>
+    
+    <tr id="row1">
+    <td id="name_row1">Ankit</td>
+    <td id="country_row1">India</td>
+    <td id="age_row1">20</td>
+    <td>
+    <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+    <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+    <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+    </td>
+    </tr>
+    
+    <tr id="row2">
+    <td id="name_row2">Shawn</td>
+    <td id="country_row2">Canada</td>
+    <td id="age_row2">26</td>
+    <td>
+    <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+    <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+    <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+    </td>
+    </tr>
+    
+    <tr id="row3">
+    <td id="name_row3">Rahul</td>
+    <td id="country_row3">India</td>
+    <td id="age_row3">19</td>
+    <td>
+    <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+    <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+    <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+    </td>
+    </tr>
+    
+    <tr>
+    <td><input type="text" id="new_name"></td>
+    <td><input type="text" id="new_country"></td>
+    <td><input type="text" id="new_age"></td>
+    <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+    </tr>
+    
+    </table>
+    </div>
+
+
+
+        
+ 
+    
+</body>
+<script src="./app.js"></script>
+</html>
+
+
+
+   
+ 

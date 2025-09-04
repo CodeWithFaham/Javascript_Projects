@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile</title>
+</head>
+<body>
+    <label>1st Value</label>
+    <br>
+    <input type="number" id="v1">
+    <br>
+    <label>2nd Value</label>
+    <br>
+    <input type="number" id="v2" placeholder="name">
+    <br>
+    <button onclick="addition()">Addition</button>
+    <br>
+    <br>
+    <button onclick="multiplication()">multiplication</button>
+    <br>
+    <br>
+    <button onclick="subtraction()">subtraction</button>
+    <br>
+    <br>
+    <button onclick="division()">division</button>
+
+    <script>
+        function addition(){
+            var v1 = parseInt(document.getElementById("v1").value);
+            var v2 = parseInt(document.getElementById("v2").value);
+            var total = v1 + v2;
+            alert("your addition total is" + total);
+        }
+        function multiplication(){
+            var v1 = prompt(document.getElementById("v1").value);
+            var v2 = prompt(document.getElementById("v2").value);
+            var total = v1 * v2;
+            alert("your multiplication total is" + total);
+        }
+        function subtraction(){
+            var v1 = parseInt(document.getElementById("v1").value);
+            var v2 = parseInt(document.getElementById("v2").value);
+            var total = v1 - v2;
+            alert("your subtraction total is" + total);
+        }
+        function division(){
+            var v1 = parseInt(document.getElementById("v1").value);
+            var v2 = parseInt(document.getElementById("v2").value);
+            var total = v1 / v2;
+            alert("your division total is" + total);
+        }
+       function addition(){
+            var v1 = parseInt(prompt(document.getElementById("v1").value + "Enter 1st Value"));
+            var v2 = parseInt(prompt(document.getElementById("v2").value + "Enter 2nd  Value "));
+            var total = v1 + v2;
+            alert("your addition total is" + total);
+       }
+       function multiplication(){
+            var v1 = parseInt(prompt(document.getElementById("v1").value + "Enter 1st Value"));
+            var v2 = parseInt(prompt(document.getElementById("v2").value) + "Enter 2nd Value");
+            var total = v1 * v2;
+            alert("your multiplication total is" + total);
+       }
+       function subtraction(){
+            var v1 = parseInt(prompt(document.getElementById("v1").value + "Enter 1st Value"));
+            var v2 = parseInt(prompt(document.getElementById("v2").value + "Enter 2nd Value"));
+            var total = v1 - v2;
+            alert("your subtraction  total is" + total);
+       }
+       function division(){
+            var v1 = parseInt(prompt(document.getElementById("v1").value + "Enter 1st Value"));
+            var v2 = parseInt(prompt(document.getElementById("v2").value + "Enter 2nd Value"));
+            var total = v1 / v2;
+            alert("your division total is" + total);
+       }
+     
+    
+// var color = "black";
+// var size = 30;
+
+// if(color == "red" && size <= 20){
+//     document.write("yes red color is available")
+// }else if(color == "green" && size <= 32){
+//     document.write("yes green color is available")
+// }
+// else if(color == "yellow" && size <= 28){
+//     document.write("yes yellow color is available")
+// }else{
+//     document.write("no, this color is not available ")
+// }
+
+    </script>
+</body>
+
+</html>

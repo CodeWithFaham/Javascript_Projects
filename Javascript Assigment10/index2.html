@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather App</title>
+</head>
+<body>
+
+<h2>Enter Temperature</h2>
+
+<script>
+
+function Cold(){
+    var Temperatureinminus = parseInt(prompt("Enter Value: -1-10"));
+    if(Temperatureinminus <= 0){
+        document.write("<h2>Your temperature is Cold</h2>");
+        document.write("<img src='cold.jpg' alt='Cold Weather'>");
+    } else {
+        alert("Temperature should be below zero for it to be considered Cold");
+    }
+}
+
+function Normal(){
+    var Temperature = parseInt(prompt("Enter value: 11-20"));
+    if(Temperature >= 11 && Temperature <= 20){
+        document.write("<h2>Your Temperature is Normal</h2>");
+        document.write("<img src='normal.jpg' alt='Normal Weather'>");
+    } else {
+        alert("Temperature should be between 11 and 20 for it to be considered Normal");
+    }
+}
+
+function Hot(){
+    var Temperature = parseInt(prompt("Enter value: 21-30"));
+    if(Temperature >= 21 && Temperature <= 30){
+        document.write("<h2>Your Temperature is Hot</h2>");
+        document.write("<img src='hot.jpg' alt='Hot Weather'>");
+    } else {
+        alert("Temperature should be between 21 and 30 for it to be considered Hot");
+    }
+}
+
+function VeryHot(){
+    var v7 = parseInt(prompt("Enter value: 31-40"));
+    if(v7 >= 31 && v7 <= 40){
+        document.write("<h2>Your Temperature is Very Hot</h2>");
+        document.write("<img src='veryhot.jpg' alt='Very Hot Weather'>");
+    } else {
+        alert("Temperature should be between 31 and 40 for it to be considered Very Hot");
+    }
+}
+
+function Morethen48(){
+    var Temperature = parseInt(prompt("Enter value: > 48"));
+    if(Temperature > 48){
+        document.write("<h2>Your Temperature is too high, please avoid going outside</h2>");
+    } else {
+        alert("Temperature should be greater than 48 for this alert");
+    }
+}
+
+</script>
+
+<button onclick="Cold()">Cold</button>
+<button onclick="Normal()">Normal</button>
+<button onclick="Hot()">Hot</button>
+<button onclick="VeryHot()">Very Hot</button>
+<button onclick="Morethen48()">More than 48</button>
+
+</body>
+</html>
